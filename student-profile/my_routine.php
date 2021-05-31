@@ -51,7 +51,7 @@
 				</thead>
 				<tbody>
 				<?php
-					$query = "SELECT class_teacher.teacher_email, class_teacher.class_days, class_teacher.class_time, subjects.subject FROM class_teacher INNER JOIN subjects ON class_teacher.subject_name_id=subjects.id WHERE class_teacher.global_name_id=$global_name_id";
+					$query = "SELECT class_teacher.teacher_email, class_teacher.class_days, class_teacher.class_time, subjects.subject FROM class_teacher INNER JOIN subjects ON class_teacher.subject_name_id=subjects.id WHERE class_teacher.global_name_id=$global_name_id"; 
 
 					$result = mysqli_query($conn, $query);
 					if(!$result) {
@@ -79,7 +79,7 @@
 			</table>
 			</div>
 			<div style="margin-top: 20px;"></div>
-			<a href="#" onclick='printData();' class="btn btn-info pull-right">Print</a>
+			<a href="#printTable" onclick='printData();' class="btn btn-info pull-right">Print</a>
 		</div>
 	</div>
 </div>
