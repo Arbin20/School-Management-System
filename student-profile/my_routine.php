@@ -79,7 +79,7 @@
 			</table>
 			</div>
 			<div style="margin-top: 20px;"></div>
-			<a href="#printTable" onclick='printData();' class="btn btn-info pull-right">Print</a>
+			<button onclick='printDiv("printTable")' class="btn btn-info pull-right">Print</button>
 		</div>
 	</div>
 </div>

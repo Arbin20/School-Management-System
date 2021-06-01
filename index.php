@@ -6,12 +6,7 @@
 				<div class="col-md-12">
 					<div class="display-table banner-min-height">
 						<div class="display-table-cell">
-						<span style="background-color:#5CB85C; font-size:30px">Mirë se vini në <?php echo get_school_name(); ?></span>
-						<br />
-							<?php if(!is_user_logged_in()) { ?>
-							<a href="login.php" class="btn btn-success">Kyçu në sistem</a>
-							<?php } ?>
-						</div>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -90,14 +85,19 @@
 			</div>
 		</div>
 	</div>
+	
+<center>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-3c2f50bf-208a-4ac0-83cb-ec29f5722fee"></div>
 	<div class="section-padding section-count">
+	</center>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					
 
-				</div>
-			</div>
+				
+				
+</div>
 		</div>
 	</div>
 <?php require_once "includes/footer.php"; ?>
