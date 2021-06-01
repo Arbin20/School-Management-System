@@ -91,7 +91,7 @@
 					</tbody>
 				</table>
 				<button onclick='printDiv("PrintClass6")' class="btn btn-info pull-right">Print</button>
-			</div> <!-- panel -->
+			</div>
 			<div class="panel panel-info tab-pane" id="6b">
 				<div class="panel-heading">Class 06 (Final)</div>
 				<table class="table table-striped" id="PrintClass6final">
