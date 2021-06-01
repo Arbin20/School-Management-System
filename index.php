@@ -6,7 +6,7 @@
 				<div class="col-md-12">
 					<div class="display-table banner-min-height">
 						<div class="display-table-cell">
-						<span style="background-color:black; font-size:30px">Mirë se vini në <?php echo get_school_name(); ?></span>
+						<span style="background-color:#5CB85C; font-size:30px">Mirë se vini në <?php echo get_school_name(); ?></span>
 						<br />
 							<?php if(!is_user_logged_in()) { ?>
 							<a href="login.php" class="btn btn-success">Kyçu në sistem</a>
