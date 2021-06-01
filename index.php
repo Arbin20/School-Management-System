@@ -1,5 +1,4 @@
-<?php require_once "includes/header.php"; ?>
-
+<?php require_once "includes/header.php"; ?> 
 <div class="home-banner section-padding text-center text-light home-banner-bg">
 		<div class="container">
 			<div class="row">
@@ -35,7 +34,7 @@
 						<center><h3>ARSIMTARËT</h3></center>
 						<img src="assets/images/banner-3.jpg" alt="">
 						<?php
-						$query = "SELECT * FROM page_contents WHERE page_name='teacher_page'";
+						$query = "SELECT * FROM page_contents WHERE page_name='teacher_page'";  
 						$result = mysqli_query($conn, $query);
 						$row = mysqli_fetch_assoc($result);
 						echo $row['page_text'];
@@ -84,8 +83,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	
+	</div>	
 <center>
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-3c2f50bf-208a-4ac0-83cb-ec29f5722fee"></div>
@@ -93,9 +91,7 @@
 	</center>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-
-				
+				<div class="col-md-4">				
 				
 </div>
 		</div>
