@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2021 at 03:56 PM
--- Server version: 10.4.18-MariaDB
+-- Generation Time: Jun 03, 2021 at 04:48 PM
+-- Server version: 10.5.10-MariaDB
 -- PHP Version: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -41,8 +41,9 @@ CREATE TABLE `attendance` (
 --
 
 INSERT INTO `attendance` (`id`, `dates`, `student_id`, `attendance`, `global_name_id`, `teacher_email`) VALUES
-(46, '2018-07-17', '20210A0602@school.com', 'N', 52, 'mdserajuddin1958@gmail.com');
-
+(59, '2021-05-22', '20212A0601@school.com', 'Y', 88, 'a.memishi@edu.mk'),
+(60, '2021-05-22', '20212A0901@ismailqemali.mk', 'Y', 89, 'adhurim.qazimi@hotmail.com'),
+(61, '2021-06-01', '20211A0701@ismailqemali.mk', 'Y', 91, 'mexhit@edu.mk');
 
 -- --------------------------------------------------------
 
@@ -60,11 +61,11 @@ CREATE TABLE `class` (
 --
 
 INSERT INTO `class` (`id`, `class`) VALUES
-(15, 9),
-(14, 8),
-(13, 7),
-(12, 6),
-(16, 5);
+(18, 5),
+(19, 6),
+(20, 7),
+(21, 8),
+(22, 9);
 
 -- --------------------------------------------------------
 
@@ -109,7 +110,9 @@ CREATE TABLE `class_teacher` (
 --
 
 INSERT INTO `class_teacher` (`id`, `global_name_id`, `teacher_email`, `subject_name_id`, `class_time`, `class_days`, `is_class_teacher`) VALUES
-(40, 82, 'adhurim.qazimi@hotmail.com', 32, '11:00', '[\"e Hu00ebnu00eb\",\"e Martu00eb\"]', 'Y');
+(48, 91, 'mexhit@edu.mk', 28, '7:10', '[\"Wednesday\",\"Thursday\"]', 'Y'),
+(47, 89, 'adhurim.qazimi@hotmail.com', 32, '10:00', '[\"Wednesday\"]', 'N'),
+(46, 88, 'a.memishi@edu.mk', 27, '8:20', '[\"Monday\",\"Tuesday\"]', 'Y');
 
 -- --------------------------------------------------------
 
@@ -169,6 +172,7 @@ CREATE TABLE `groups` (
 INSERT INTO `groups` (`id`, `class_id`, `group_name`) VALUES
 (1, 4, 'Shkencat'),
 (2, 4, 'Shoqëror');
+
 -- --------------------------------------------------------
 
 --
@@ -217,7 +221,9 @@ INSERT INTO `page_contents` (`id`, `page_name`, `page_text`, `page_image`) VALUE
 (2, 'admission_page', '<h4><strong>Admission Classes:</strong>&nbsp;We only admit students in class 6 and class 9.</h4>\r\n<p>To get admitted, please bring the follwing&nbsp;<em>documents</em>:</p>\r\n<ol>\r\n<li>Certificate of Class 5/8</li>\r\n<li>Testimonial from school</li>\r\n<li>Four copy passport size photographs</li>\r\n<li>Marksheet of class 5/8</li>\r\n<li>Birth Certificate</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<h4><strong>Admission Requirements</strong></h4>\r\n<ol>\r\n<li>Minimum GPA 3.50 out of 5.0</li>\r\n<li>Education gap upto 1 year</li>\r\n</ol>', NULL),
 (5, 'gallery_page', NULL, 'Foto-nxenesve-scaled.jpg'),
 (11, 'gallery_page', NULL, '103942005_1611388052362747_2595489565734479268_n.jpg'),
-(14, 'gallery_page', NULL, '61050334_1274815159353373_6475746561270743040_n.jpg');
+(14, 'gallery_page', NULL, '61050334_1274815159353373_6475746561270743040_n.jpg'),
+(15, 'gallery_page', NULL, 'foto.jpg'),
+(16, 'gallery_page', NULL, '189634201_1895651930603023_5335007963579166511_n.jpg');
 
 -- --------------------------------------------------------
 
@@ -264,7 +270,7 @@ CREATE TABLE `results` (
 --
 
 INSERT INTO `results` (`id`, `student_id`, `student_roll`, `exam_year`, `exam_type`, `global_name_id`, `subject_id`, `marks`, `grade`, `student_class`, `teacher_email`) VALUES
-(131, '20211A0607@school.com', 7, 2021, 'final', 63, 26, '100', 5, 10, 'kanizfatemazuthi@gmail.com');
+(132, '20211A0701@ismailqemali.mk', 1, 2021, 'mid', 91, 28, '50', 2, 7, 'mexhit@edu.mk');
 
 -- --------------------------------------------------------
 
@@ -285,16 +291,13 @@ CREATE TABLE `sections` (
 --
 
 INSERT INTO `sections` (`id`, `class_id`, `section`, `group_name`, `global_name`) VALUES
-(79, 5, 'II', 'Përgjithshëm', 'Class: 5 | Section: II  | Group: Përgjithshëm'),
-(78, 5, 'I', 'Përgjithshëm', 'Class: 5 | Section: I  | Group: Përgjithshëm'),
-(80, 6, 'I', 'Përgjithshëm', 'Class: 6 | Section: I  | Group: Përgjithshëm'),
-(81, 6, 'II', 'Përgjithshëm', 'Class: 6 | Section: II  | Group: Përgjithshëm'),
-(82, 7, 'I', 'Përgjithshëm', 'Class: 7 | Section: I  | Group: Përgjithshëm'),
-(83, 7, 'II', 'Përgjithshëm', 'Class: 7 | Section: II  | Group: Përgjithshëm'),
-(84, 8, 'I', 'Përgjithshëm', 'Class: 8 | Section: I  | Group: Përgjithshëm'),
-(85, 8, 'II', 'Përgjithshëm', 'Class: 8 | Section: II  | Group: Përgjithshëm'),
-(86, 9, 'I', 'Përgjithshëm', 'Class: 9 | Section: I  | Group: Përgjithshëm'),
-(87, 9, 'II', 'Përgjithshëm', 'Class: 9 | Section: II  | Group: Përgjithshëm');
+(94, 6, 'A', 'Humanities', 'Class: 6 | Section: A  | Group: Humanities'),
+(93, 6, 'B', 'Humanities', 'Class: 6 | Section: B  | Group: Humanities'),
+(92, 6, 'A', 'Science', 'Class: 6 | Section: A  | Group: Science'),
+(91, 7, 'A', 'Science', 'Class: 7 | Section: A  | Group: Science'),
+(90, 5, 'B', 'Humanities', 'Class: 5 | Section: B  | Group: Humanities'),
+(89, 9, 'A', 'Humanities', 'Class: 9 | Section: A  | Group: Humanities'),
+(88, 5, 'A', 'Humanities', 'Class: 5 | Section: A  | Group: Humanities');
 
 -- --------------------------------------------------------
 
@@ -325,11 +328,9 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`id`, `student_email`, `student_name`, `student_class`, `student_section`, `student_group`, `student_roll`, `student_father_name`, `student_mother_name`, `student_address`, `student_contact`, `student_dob`, `student_blood_group`, `student_gender`, `student_status`) VALUES
-(51, '20210II0601@school.com', 'Faton Xhemali', 5, 'II', 'Përgjithsh', 1, 'Islam', 'Muhabije', '<p>Nerasht</p>', '070112985', '2002-04-06', 'A+', 'Male', 'active'),
-(52, '202121901@ismailqemali.com', 'Enis Mehdi', 9, '1', 'Shoqëror', 1, 'Agim', 'Rexhie', '<p>Nerasht&nbsp;</p>', '070123874', '2008-07-09', 'B+', 'Male', 'active'),
-(53, '202122901@ismailqemali.com', 'Egzon Qamili', 9, '2', 'Shoqëror', 1, 'Xhevdet', 'Suzana', '<p>Nerashte</p>', '070421545', '2008-05-21', 'AB-', 'Male', 'active'),
-(54, '202122902@ismailqemali.com', 'Fatime Alimi', 9, '2', 'Shoqëror', 2, 'Halit', 'Emine', '<p>Nerasht</p>', '071124554', '2008-09-22', 'A+', 'Female', 'active'),
-(55, '202121701@ismailqemali.com', 'Kanita Qazimi', 7, '1', 'Shoqëror', 1, 'Habil', 'Lindita', '<p>Nerasht Shulke</p>', '075412121', '2009-05-14', 'AB+', 'Female', 'active');
+(58, '20212A0901@ismailqemali.mk', 'Senad Emini', 9, 'A', 'Humanities', 1, 'Agim', 'Rexhije', '<p>Nerasht, Shulke 01</p>', '070487454', '2005-05-06', 'AB+', 'Male', 'active'),
+(59, '20212B0901@ismailqemali.mk', 'Egzon Qamili', 9, 'B', 'Humanities', 1, 'Xhevdet', 'Suzana', '<p>Nerasht</p>', '075412134', '2007-05-01', 'A+', 'Male', 'active'),
+(60, '20211A0701@ismailqemali.mk', 'Lejla Shaqiri', 7, 'A', 'Science', 1, 'Hamdi', 'Valdeta', '<p>Nerasht</p>', '070548811', '2007-05-17', 'B+', 'Female', 'active');
 
 -- --------------------------------------------------------
 
@@ -403,14 +404,12 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `username`, `user_password`, `user_role`, `user_firstname`, `user_lastname`) VALUES
 (1, 'arbin.qazimi21@gmail.com', 'arbin123', 'administrator', 'Arbin', 'Qazimi'),
 (87, 'mexhit@edu.mk', 'mexhit123', 'teacher', 'Mexhit', 'Musliu'),
-(86, 'z.selmani@edu.mk', 'yemrije123', 'teacher', 'Zemrije', 'Selmani'),
+(86, 'z.selmani@edu.mk', 'zemrije123', 'teacher', 'Zemrije', 'Selmani'),
 (85, 'a.memishi@edu.mk', 'almira123', 'teacher', 'Almira', 'Memishi'),
 (88, 'adhurim.qazimi@hotmail.com', 'adhurim123', 'teacher', 'Adhurim', 'Qazimi'),
-(89, '20210II0601@school.com', 'faton123', 'student', 'Faton', 'Xhemali'),
-(90, '202121901@ismailqemali.com', 'enis123', 'student', 'Enis', 'Mehdi'),
-(91, '202122901@ismailqemali.com', 'egzon123', 'student', 'Egzon', 'Qamili'),
-(92, '202122902@ismailqemali.com', 'fatime123', 'student', 'Fatime', 'Alimi'),
-(93, '202121701@ismailqemali.com', 'kanita123', 'student', 'Kanita', 'Qazimi');
+(98, '20211A0701@ismailqemali.mk', 'lejla123', 'student', 'Lejla', 'Shaqiri'),
+(96, '20212A0901@ismailqemali.mk', 'enis123', 'student', 'Senad', 'Emini'),
+(97, '20212B0901@ismailqemali.mk', 'egzon123', 'student', 'Egzon', 'Qamili');
 
 --
 -- Indexes for dumped tables
@@ -520,13 +519,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `attendance`
 --
 ALTER TABLE `attendance`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 
 --
 -- AUTO_INCREMENT for table `class`
 --
 ALTER TABLE `class`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `classtime`
@@ -538,7 +537,7 @@ ALTER TABLE `classtime`
 -- AUTO_INCREMENT for table `class_teacher`
 --
 ALTER TABLE `class_teacher`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `event`
@@ -568,7 +567,7 @@ ALTER TABLE `notice`
 -- AUTO_INCREMENT for table `page_contents`
 --
 ALTER TABLE `page_contents`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `page_options`
@@ -580,19 +579,19 @@ ALTER TABLE `page_options`
 -- AUTO_INCREMENT for table `results`
 --
 ALTER TABLE `results`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=133;
 
 --
 -- AUTO_INCREMENT for table `sections`
 --
 ALTER TABLE `sections`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
 
 --
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT for table `subjects`
@@ -610,7 +609,7 @@ ALTER TABLE `teachers`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
