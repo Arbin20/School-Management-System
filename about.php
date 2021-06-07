@@ -18,4 +18,4 @@ dmth me qëllim që mos të shkruhet kodi shumë herë -->
 			</div>
 		</div>
 	</div>
-<?php require_once "includes/footer.php"; ?>
+<?php require_once "includes/footer.php"; ?>d

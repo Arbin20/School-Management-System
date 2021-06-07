@@ -61,8 +61,7 @@
 
 								$my_class = $row['global_name'];
 								$global_name_id = $row['global_name_id'];
-								/*$subject_id = $row['subject_id'];
-								$subject_name = get_subject_name_by_id($subject_id);*/
+								
 
 								echo "<option value='{$global_name_id}'>{$my_class}</option>";
 							}
@@ -76,7 +75,7 @@
 					<label for="">Select Exam Type</label>
 					<select name="exam_type" class="form-control" id="">
 						<option value="">Select Exam Type</option>
-						<option value="mid">Mid Term Exam</option>
+						<option value="mid">First Exam</option>
 						<option value="final">Final Exam</option>
 					</select>
 				</div>
@@ -168,21 +167,12 @@
 					$global_name_id = $_GET['global_name_id'];
 					$exam_year = date("Y");
 
-					// $sub_q = "SELECT subject_name_id FROM class_teacher WHERE global_name_id=$global_name_id AND teacher_email='$session_user'";
-					// $sub_res = mysqli_query($conn, $sub_q);
-
-					// $subject = mysqli_fetch_assoc($sub_res);
-					// $subject_id = $subject['subject_name_id'];
 					$subject_id = $_GET['subject'];
 
 					$student_class = get_class_by_global_name_id($global_name_id);
 
 					$results = $_POST['marks'];
 
-					// [id1, id2, id3]
-					// [40, 50, 20]
-
-					// [id1=>40, id2=>50, id3=>20]
 
 					$combine_results = array_combine($total_students, $results);
 

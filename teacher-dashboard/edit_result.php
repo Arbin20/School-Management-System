@@ -58,7 +58,7 @@
 			<label for="">Select Exam Type</label>
 			<select name="exam_type" class="form-control" id="">
 				<option value="">Select Exam Type</option>
-				<option value="mid">Mid Term Exam</option>
+				<option value="mid">First Exam</option>
 				<option value="final">Final Exam</option>
 			</select>
 		</div>
