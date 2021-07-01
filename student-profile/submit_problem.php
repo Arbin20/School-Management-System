@@ -4,7 +4,7 @@
 	$username = $_SESSION['username'];
 	if(isset($_POST['message_submit'])) {
 		$subject= $_POST['subject'];
-		$message= wordwrap($_POST['message'], 70);
+		$message= wordwrap($_POST['message'], 465);
 		$done = mail("arbin.qazimi21@gmail.com",$subject,$message);
 		if($done) {
 			echo "<script>alert('Message Sent!')</script>";
