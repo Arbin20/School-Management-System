@@ -34,7 +34,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.php">School Admin</a>
+					<a class="navbar-brand" href="index.php">Ismail Qemali</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -45,7 +45,6 @@
 						<li><a href="sections.php"><i class="fa fa-code-fork"></i> Sections</a></li>
 						<li><a href="subjects.php"><i class="fa fa-book"></i> Subjects</a></li>
 						<li><a href="assign_teacher.php"><i class="fa fa-user"></i> Assign Teacher</a></li>
-						<li><a href="calculate_results.php"><i class="fa fa-bars"></i> Results</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Teachers <b class="caret"></b></a>
 							<ul class="dropdown-menu">
