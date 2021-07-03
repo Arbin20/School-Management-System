@@ -13,10 +13,8 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<title>School Admin</title>
-		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/bootstrap-datepicker.css" rel="stylesheet">
-		<!-- Add custom CSS here -->
 		<link href="css/sb-admin.css" rel="stylesheet">
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 		<script src="js/jquery-1.10.2.js"></script>
@@ -24,9 +22,7 @@
 	</head>
 	<body>
 		<div id="wrapper">
-			<!-- Sidebar -->
 			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					<span class="sr-only">Toggle navigation</span>
@@ -36,7 +32,7 @@
 					</button>
 					<a class="navbar-brand" href="index.php">Ismail Qemali</a>
 				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
+				
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav side-nav">
 						<li><a href="index.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
@@ -102,7 +98,7 @@
 							</ul>
 						</li>
 					</ul>
-					</div><!-- /.navbar-collapse -->
+					</div>
 				</nav>
 
 				<div id="page-wrapper">

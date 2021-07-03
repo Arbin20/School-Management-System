@@ -132,9 +132,6 @@
 		$students_attendance = $_POST['attendance'];
 		$class_date = $_POST['select_date'];
 
-		// var_dump($students_attendance);
-		// var_dump($total_students);
-
 		foreach ($total_students as $key => $student) {
 			if(in_array($student, $students_attendance)) {
 				$attendance_val = "Y";

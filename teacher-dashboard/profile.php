@@ -33,7 +33,7 @@
 		</div>
 		<div class="col-md-8">
 			<div class="panel panel-info">
-			<div class="panel-heading"><h2>Wecome</h2></div>
+			<div class="panel-heading"><h2>Welcome</h2></div>
 			<table class="table table-striped">
 				<thead>
 					<tr>
