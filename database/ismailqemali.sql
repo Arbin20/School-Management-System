@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2021 at 04:48 PM
--- Server version: 10.5.10-MariaDB
+-- Generation Time: Jul 04, 2021 at 04:24 PM
+-- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -87,7 +87,8 @@ INSERT INTO `classtime` (`id`, `class_time`) VALUES
 (27, '9:20'),
 (28, '7:10'),
 (29, '10:00'),
-(30, '11:00');
+(30, '11:00'),
+(31, '12:30');
 
 -- --------------------------------------------------------
 
@@ -270,7 +271,7 @@ CREATE TABLE `results` (
 --
 
 INSERT INTO `results` (`id`, `student_id`, `student_roll`, `exam_year`, `exam_type`, `global_name_id`, `subject_id`, `marks`, `grade`, `student_class`, `teacher_email`) VALUES
-(132, '20211A0701@ismailqemali.mk', 1, 2021, 'mid', 91, 28, '50', 2, 7, 'mexhit@edu.mk');
+(132, '20211A0701@ismailqemali.mk', 1, 2021, 'mid', 91, 28, '60', 3, 7, 'mexhit@edu.mk');
 
 -- --------------------------------------------------------
 
@@ -330,7 +331,8 @@ CREATE TABLE `students` (
 INSERT INTO `students` (`id`, `student_email`, `student_name`, `student_class`, `student_section`, `student_group`, `student_roll`, `student_father_name`, `student_mother_name`, `student_address`, `student_contact`, `student_dob`, `student_blood_group`, `student_gender`, `student_status`) VALUES
 (58, '20212A0901@ismailqemali.mk', 'Senad Emini', 9, 'A', 'Humanities', 1, 'Agim', 'Rexhije', '<p>Nerasht, Shulke 01</p>', '070487454', '2005-05-06', 'AB+', 'Male', 'active'),
 (59, '20212B0901@ismailqemali.mk', 'Egzon Qamili', 9, 'B', 'Humanities', 1, 'Xhevdet', 'Suzana', '<p>Nerasht</p>', '075412134', '2007-05-01', 'A+', 'Male', 'active'),
-(60, '20211A0701@ismailqemali.mk', 'Lejla Shaqiri', 7, 'A', 'Science', 1, 'Hamdi', 'Valdeta', '<p>Nerasht</p>', '070548811', '2007-05-17', 'B+', 'Female', 'active');
+(60, '20211A0701@ismailqemali.mk', 'Lejla Shaqiri', 7, 'A', 'Science', 1, 'Hamdi', 'Valdeta', '<p>Nerasht</p>', '070548811', '2007-05-17', 'B+', 'Female', 'active'),
+(61, '20211A0601@ismailqemali.mk', 'Rina Qazimi', 5, 'A', 'Science', 1, 'Blerton', '/', '<p>Shukere 112</p>', '070114985', '2007-07-03', 'B+', 'Female', 'active');
 
 -- --------------------------------------------------------
 
@@ -348,12 +350,15 @@ CREATE TABLE `subjects` (
 --
 
 INSERT INTO `subjects` (`id`, `subject`) VALUES
-(28, 'Matematikë për klasën e pestë'),
-(27, 'Gjuhë Shqipe për klasën e pestë'),
-(29, 'Shkencat Natyrore për klasën e pestë'),
-(30, 'Shoqëria për klasën e pestë'),
+(28, 'Matematikë'),
+(27, 'Gjuhë Shqipe'),
+(29, 'Shkencat Natyrore'),
+(30, 'Shoqëri dhe Edukim'),
 (31, 'Biologji'),
-(32, 'Edukatë Fizike');
+(32, 'Edukatë Fizike'),
+(33, 'Gjeografi'),
+(34, 'Fizikë'),
+(35, 'Gjuhë Angleze');
 
 -- --------------------------------------------------------
 
@@ -409,7 +414,8 @@ INSERT INTO `user` (`id`, `username`, `user_password`, `user_role`, `user_firstn
 (88, 'adhurim.qazimi@hotmail.com', 'adhurim123', 'teacher', 'Adhurim', 'Qazimi'),
 (98, '20211A0701@ismailqemali.mk', 'lejla123', 'student', 'Lejla', 'Shaqiri'),
 (96, '20212A0901@ismailqemali.mk', 'enis123', 'student', 'Senad', 'Emini'),
-(97, '20212B0901@ismailqemali.mk', 'egzon123', 'student', 'Egzon', 'Qamili');
+(97, '20212B0901@ismailqemali.mk', 'egzon123', 'student', 'Egzon', 'Qamili'),
+(99, '20211A0601@ismailqemali.mk', 'rina123', 'student', 'Rina', 'Qazimi');
 
 --
 -- Indexes for dumped tables
@@ -531,7 +537,7 @@ ALTER TABLE `class`
 -- AUTO_INCREMENT for table `classtime`
 --
 ALTER TABLE `classtime`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `class_teacher`
@@ -591,13 +597,13 @@ ALTER TABLE `sections`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 
 --
 -- AUTO_INCREMENT for table `subjects`
 --
 ALTER TABLE `subjects`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `teachers`
@@ -609,7 +615,7 @@ ALTER TABLE `teachers`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
