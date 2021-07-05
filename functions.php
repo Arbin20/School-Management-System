@@ -74,7 +74,7 @@
 	/*****************************
 	@ Events
 	******************************/
-	//shtoni event të ri nga paneli
+	//shton event të ri nga paneli
 	function add_new_event() {
 		global $conn;
 		if(isset($_POST['add_event_btn'])) {

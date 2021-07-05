@@ -4,7 +4,6 @@
 				<div class="col-md-6">
 				<h3 class="footer-header">Linqe të dobishme</h3>
 					<ul class="footer-links">
-						<li><a href="result.php">Rezultatet</a></li>
 						<li><a href="contact.php">Kontakti</a></li>
 						<li><a href="login.php">Kyçu në sistemin e shkollës</a></li>
 						<li><a href="teachers.php">Arsimtarët</a></li>
