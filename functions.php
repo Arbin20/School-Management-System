@@ -1,4 +1,4 @@
-	<?php
+<?php
 	require_once "includes/db.php";
 	session_start();
 	date_default_timezone_set('Europe/Skopje');
