@@ -896,11 +896,6 @@
 	}
 
 
-
-	/****************************************
-	# teacher 
-	****************************************/
-
 	function get_class_by_global_name_id($id) {
 		global $conn;
 		$query = "SELECT class_id FROM sections WHERE id=$id";
@@ -962,9 +957,7 @@
 		return $final_grade;
 	}
 
-	/*******************************
-	@ Page contents
-	*******************************/
+
 	//about page
 	function about_content_update() {
 		global $conn;

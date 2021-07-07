@@ -154,7 +154,7 @@
 	<div class="col-md-12">
 		<div class="form-group">
 			<label for="">Address</label>
-			<textarea name="student_address" class="form-control" id="" cols="30" rows="6"></textarea>
+			<textarea name="student_address" class="form-control" id="" cols="32" rows="6"></textarea>
 		</div>
 	</div>
 	<div class="col-md-12">
@@ -182,7 +182,7 @@
 		}
 	});
 
-	//auto student id generator
+	//Gjeneratori i  id të nxënësve
 	$(document).on('change', '#student-class, #student-section, #student-group, #admission_year', function() {
 		var std_class_name = $("#student-class").val();
 		var std_section = $("#student-section").val();

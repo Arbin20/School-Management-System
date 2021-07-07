@@ -13,7 +13,7 @@ if(isset($_POST['global_name_id'])) {
 	while ($row = mysqli_fetch_assoc($result)) {
 		$time_id = $row['id'];
 		$all_class_time[] = $row['class_time'];
-		//echo "<option value='{$class_time}'>{$class_time}</option>";
+		
 	}
 
 	$global_name_id = $_POST['global_name_id'];
