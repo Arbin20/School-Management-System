@@ -185,14 +185,12 @@
 						header("Location: teacher-dashboard/index.php");
 					} elseif($db_user_role == 'controller') {
 						header("Location: controller/index.php");
-					} elseif($db_user_role == 'librarian') {
-						header("Location: librarian/index.php");
 					}
 				} else {
-					$error = "Credentials did not match. Please enter your correct username and password.";
+					$error = "Të dhënat nuk janë të sakta, ju lutem prevoni përsëri.";
 				}
 			} else {
-				$error = "Fields can't be empty.";
+				$error = "Fushat nuk duhet të jenë të zbrazura.";
 			}
 		}
 		return $error;
