@@ -70,8 +70,7 @@
                                 <th>Adress</th>
                                 <td><?php echo $row['teacher_address'] ?></td>
                             </tr>
-                           
-                        </tbody>
+                           </tbody>
                     </table>
                 </div>
             </div>
