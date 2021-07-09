@@ -30,30 +30,30 @@
 		<div class="col-md-4">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-					<h3 class="panel-title">Take Attendance</h3>
+					<h3 class="panel-title">Prezenca</h3>
 				</div>
 				<div class="panel-body">
-					<a href="take_attendance.php" class="btn btn-block btn-lg btn-danger">Take Attendance</a>
+					<a href="take_attendance.php" class="btn btn-block btn-lg btn-danger">Merr prezencën</a>
 				</div>
 			</div>
 		</div> <!-- col-md-4 -->
 		<div class="col-md-4">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-					<h3 class="panel-title">Add Result</h3>
+					<h3 class="panel-title">Rezultatet</h3>
 				</div>
 				<div class="panel-body">
-					<a href="add_result.php" class="btn btn-block btn-lg btn-danger">Add Result</a>
+					<a href="add_result.php" class="btn btn-block btn-lg btn-danger">Shto rezultat</a>
 				</div>
 			</div>
 		</div> <!-- col-md-4 -->
 		<div class="col-md-4">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-					<h3 class="panel-title">My Profile</h3>
+					<h3 class="panel-title">Profili</h3>
 				</div>
 				<div class="panel-body">
-					<a href="profile.php" class="btn btn-block btn-lg btn-danger">My Profile</a>
+					<a href="profile.php" class="btn btn-block btn-lg btn-danger">Profili im</a>
 				</div>
 			</div>
 		</div> <!-- col-md-4 -->
@@ -64,7 +64,7 @@
 		<div class="col-md-4">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-					<h3 class="panel-title">My Classes</h3>
+					<h3 class="panel-title">Klasat e mia</h3>
 				</div>
 				<div class="panel-body">
 				<?php
@@ -82,13 +82,13 @@
 					}
 				?>
 				</div>
-				<div class="panel-footer text-right"><a href="my_classes.php">Details >></a></div>
+				<div class="panel-footer text-right"><a href="my_classes.php">Detajet >></a></div>
 			</div>
 		</div> <!-- col-md-4 -->
 		<div class="col-md-4">
 			<div class="panel panel-info">
 				<div class="panel-heading">
-					<h3 class="panel-title">My Subjects</h3>
+					<h3 class="panel-title">Lëndët e mija</h3>
 				</div>
 				<div class="panel-body">
 				<?php
@@ -106,13 +106,13 @@
 					}
 				?>
 				</div>
-				<div class="panel-footer text-right"><a href="my_classes.php">Details >></a></div>
+				<div class="panel-footer text-right"><a href="my_classes.php">Detajet >></a></div>
 			</div>
 		</div> <!-- col-md-4 -->
 		<div class="col-md-4">
 			<div class="panel panel-success">
 				<div class="panel-heading">
-					<h3 class="panel-title">My Class Times</h3>
+					<h3 class="panel-title">Orari</h3>
 				</div>
 				<div class="panel-body">
 				<?php
@@ -131,7 +131,7 @@
 					}
 				?>
 				</div>
-				<div class="panel-footer text-right"><a href="my_classes.php">Details >></a></div>
+				<div class="panel-footer text-right"><a href="my_classes.php">Detajet >></a></div>
 			</div>
 		</div> <!-- col-md-4 -->
 	</div>

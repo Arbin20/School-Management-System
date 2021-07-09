@@ -27,8 +27,7 @@
 			</div>
 		</div>
         <?php } else { ?>
-
-        <!-- single teacehr view -->
+ <!-- single teacehr view -->
         <div class="container">
             <div class="row">
                 <?php
@@ -77,5 +76,4 @@
         </div>
         <?php } ?>
 	</div>
-
 <?php require_once "includes/footer.php"; ?>

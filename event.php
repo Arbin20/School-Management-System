@@ -7,7 +7,6 @@
                     <?php
                         if(isset($_GET['id'])) {
                             $get_the_id = $_GET['id'];
-
                             $query = "SELECT * FROM event WHERE id=$get_the_id";
                             $result = mysqli_query($conn, $query);
                             while($row = mysqli_fetch_assoc($result)) {

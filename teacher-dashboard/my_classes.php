@@ -1,15 +1,15 @@
 <?php require_once "includes/header.php"; ?>
 <div class="panel panel-info">
-<div class="panel-heading"><h3>Here is your class lists</h3></div>
+<div class="panel-heading"><h3>Lista e klasave</h3></div>
 <table class="table table-bordered table-stripe">
 	<thead>
 		<tr>
-			<th>Class</th>
-			<th>Subject</th>
-			<th>Time</th>
-			<th>Days</th>
-			<th>My Students</th>
-			<th>Take Attendance</th>
+			<th>Klasat</th>
+			<th>Lëndët</th>
+			<th>Koha</th>
+			<th>Dita</th>
+			<th>Nxënësit</th>
+			<th>Prezenca</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -38,8 +38,8 @@
 					echo "<td>".get_subject_name_by_id($subject_id)."</td>";
 					echo "<td>$class_time</td>";
 					echo "<td>$class_days</td>";
-					echo "<td><a href='my_students.php?global_name_id=$global_name_id' class='btn btn-info'>View Student</a></td>";
-					echo "<td><a href='take_attendance.php?global_name_id=$global_name_id' class='btn btn-info'>Take Attendance</a></td>";
+					echo "<td><a href='my_students.php?global_name_id=$global_name_id' class='btn btn-info'>Shiko Nxënësit</a></td>";
+					echo "<td><a href='take_attendance.php?global_name_id=$global_name_id' class='btn btn-info'>Merr Prezencën</a></td>";
 					
 				/*	if($is_class_teacher == 'Y') {
 					echo "<td><a href='take_attendance.php?global_name_id=$global_name_id' class='btn btn-info'>Take Attendance</a></td>";
