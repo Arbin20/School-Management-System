@@ -33,29 +33,29 @@
 		</div>
 		<div class="col-md-8">
 			<div class="panel panel-info">
-			<div class="panel-heading"><h2>Welcome</h2></div>
+			<div class="panel-heading"><h2>Të dhënat e Mësuesit</h2></div>
 			<table class="table table-striped">
 				<thead>
 					<tr>
-						<th>Attribute</th>
-						<th>Value</th>
+						<th>Atributet</th>
+						<th>Vlerat</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>Name</td>
+						<td>Emri</td>
 						<td><?php echo $fnmae. " " .$lnmae; ?></td>
 					</tr>
 					<tr>
-						<td>Designation</td>
+						<td>Drejtimi</td>
 						<td><?php echo $teacher_designation; ?></td>
 					</tr>
 					<tr>
-						<td>Gender</td>
+						<td>Gjinia</td>
 						<td><?php echo $teacher_gender; ?></td>
 					</tr>
 					<tr>
-						<td>Qualification</td>
+						<td>I kualifikuar për</td>
 						<td><?php echo $teacher_qulaification; ?></td>
 					</tr>
 					<tr>
@@ -66,10 +66,7 @@
 						<td>Address</td>
 						<td><?php echo $teacher_address; ?></td>
 					</tr>
-					<tr>
-						<td>Contact</td>
-						<td><?php echo $teacher_contact; ?></td>
-					</tr>
+
 				</tbody>
 			</table>
 			</div>

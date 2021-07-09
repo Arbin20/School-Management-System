@@ -27,7 +27,7 @@
 		<div class="col-md-12">
 			<div class="alert alert-success alert-dismissible text-center" role="alert">
 			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			  <strong>Result Added!</strong> If you have mistake, choose update from menu to update result.
+			  <strong>Rezultati u shtua me sukses!</strong>
 			</div>
 		</div>
 	</div>
@@ -39,7 +39,7 @@
 		<div class="col-md-12">
 			<div class="alert alert-danger alert-dismissible text-center" role="alert">
 			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			  <strong>Result Already Added!</strong> If you want to update result, choose update from menu.
+			  <strong>Rezultati është shtuar tashmë!</strong> 
 			</div>
 		</div>
 	</div>
@@ -51,9 +51,9 @@
 		<div class="col-md-6 col-md-offset-3">
 			<form action="" method="post">
 				<div class="form-group">
-					<label for="">Select Class</label>
+					<label for="">Zgjedhni Klasën</label>
 					<select name="select_class" class="form-control" id="class_selector">
-						<option value="">Select Class</option>
+						<option value="">Klasa</option>
 						<?php
 							$query_class = "SELECT DISTINCT sections.*, class_teacher.global_name_id FROM class_teacher INNER JOIN sections ON class_teacher.global_name_id=sections.id WHERE class_teacher.teacher_email='$session_user'";
 							$result = mysqli_query($conn, $query_class);
@@ -72,15 +72,15 @@
 					
 				</div>
 				<div class="form-group">
-					<label for="">Select Exam Type</label>
+					<label for="">Zhgjedhni Testin</label>
 					<select name="exam_type" class="form-control" id="">
-						<option value="">Select Exam Type</option>
-						<option value="mid">First Exam</option>
-						<option value="final">Final Exam</option>
+						<option value="">Testimi</option>
+						<option value="mid">Testi i Parë</option>
+						<option value="final">Testi i Dytë</option>
 					</select>
 				</div>
 				<div class="form-group">
-					<input type="submit" name="select_class_submit" value="Submit" class="btn btn-info">
+					<input type="submit" name="select_class_submit" value="Paraqit" class="btn btn-info">
 				</div>
 			</form>
 		</div>
@@ -90,9 +90,9 @@
 			<table class="table table-striped">
 				<thead>
 					<tr>
-						<th>Student ID</th>
-						<th>Student Roll</th>
-						<th>Marks</th>
+						<th>ID e Nxënësit</th>
+						<th>Nr</th>
+						<th>Pikët</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -147,7 +147,7 @@
 					?>
 					<tr>
 						<td colspan="4" class="text-center">
-							<input type="submit" name="result_submit" class="btn btn-info result_submit" value="Submit">
+							<input type="submit" name="result_submit" class="btn btn-info result_submit" value="Paraqit">
 						</td>
 					</tr>
 				</tbody>

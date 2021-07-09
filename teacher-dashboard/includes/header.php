@@ -52,7 +52,7 @@
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right navbar-user">
-				<li><a href="../index.php" target="_blank">Kthehu në uebfaqe</a></li>
+				<li><a href="../index.php" target="_blank">Kthehu në Uebfaqe</a></li>
 				<li class="dropdown user-dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo get_name_by_session(); ?> <b class="caret"></b></a>
 					<ul class="dropdown-menu">
