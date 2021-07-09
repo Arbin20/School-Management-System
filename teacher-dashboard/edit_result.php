@@ -24,7 +24,7 @@
 		<div class="col-md-12">
 			<div class="alert alert-success alert-dismissible text-center" role="alert">
 			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			  <strong>Result Updated!</strong> If you have mistake, update again.
+			  <strong>Rezultati u ndryshua me sukses!</strong>
 			</div>
 		</div>
 	</div>
@@ -35,9 +35,9 @@
 <div class="col-md-6 col-md-offset-3">
 	<form action="" method="post">
 		<div class="form-group">
-			<label for="">Select Class</label>
+			<label for="">Zgjedhni Klasën</label>
 			<select name="select_class" class="form-control" id="class_selector">
-				<option value="">Select Class</option>
+				<option value="">Klasa</option>
 				<?php
 					$query = "SELECT DISTINCT sections.*, class_teacher.global_name_id FROM class_teacher INNER JOIN sections ON class_teacher.global_name_id=sections.id WHERE class_teacher.teacher_email='$session_user'";
 					$result = mysqli_query($conn, $query);
@@ -55,15 +55,15 @@
 			
 		</div>
 		<div class="form-group">
-			<label for="">Select Exam Type</label>
+			<label for="">Zgjedhni Testin</label>
 			<select name="exam_type" class="form-control" id="">
-				<option value="">Select Exam Type</option>
-				<option value="mid">First Exam</option>
-				<option value="final">Final Exam</option>
+				<option value="">Testimi</option>
+				<option value="mid">Testi Parë</option>
+				<option value="final">Testi Dytë</option>
 			</select>
 		</div>
 		<div class="form-group">
-			<input type="submit" name="update_get_class_submit" value="Submit" class="btn btn-info">
+			<input type="submit" name="update_get_class_submit" value="Paraqit" class="btn btn-info">
 		</div>
 	</form>
 </div>
@@ -126,12 +126,12 @@
 						$('.result_update_submit').attr('disabled', false);
 					} else {
 						$('.result_update_submit').attr('disabled', 'disabled');
-						$(this).after('<span class="text-danger hide-error">Number must be within 0 to 100</span>');
+						$(this).after('<span class="text-danger hide-error">Numri patjeter të jetë 0 - 100 </span>');
 					}
 
 				} else {
 					$('.result_update_submit').attr('disabled', 'disabled');
-					$(this).after('<span class="text-danger hide-error">Please input only numbers</span>');
+					$(this).after('<span class="text-danger hide-error">Ju lutem shënoni vetëm vlerën numër</span>');
 				}
 			} else {
 				$('.hide-error').hide();

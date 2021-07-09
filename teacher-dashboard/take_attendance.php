@@ -1,5 +1,5 @@
 <?php require_once "includes/header.php"; ?>
-<h2 class="text-center">Select date, take attendance and hit submit.</h2>
+<h2 class="text-center">Selektoni datën, dhe merrni prezencën.</h2>
 
 <?php
 	if(isset($_GET['global_name_id'])) {
@@ -11,7 +11,7 @@
 <form action="" method="post">
 	<div class="col-md-6 col-md-offset-3">
 		<div class="form-group">
-			<label for="">Select Date</label>
+			<label for="">Zgjedhni Datën</label>
 			<input type="text" name="select_date" class="custom-date select_date form-control" placeholder="YYYY/MM/DD" value="" autocomplete="off">
 		</div>
 	</div>
@@ -21,10 +21,10 @@
 <table class="table table-bordered table-stripped make-hidden">
 	<thead>
 		<tr>
-			<th>Student ID</th>
-			<th>Name</th>
-			<th>Roll</th>
-			<th>Attendence</th>
+			<th>ID e Nxënësit</th>
+			<th>Emri</th>
+			<th>NR</th>
+			<th>Prezenca</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -79,7 +79,7 @@
 			?>
 		<tr>
 			<td colspan="4" class="text-center">
-				<input type="submit" name="attendance_submit" class="btn btn-info" value="Submit">
+				<input type="submit" name="attendance_submit" class="btn btn-info" value="Paraqit">
 			</td>
 		</tr>
 	</tbody>
@@ -103,7 +103,7 @@
 					if(data) {
 						$('.make-hidden').hide();
 						$('.success-msg').hide();
-						$("#error-msg").html("<div class='col-md-12 text-center'><h3>Attendance taken on this day.</h3></div>");
+						$("#error-msg").html("<div class='col-md-12 text-center'><h3>Prezenca është marrur këtë ditë.</h3></div>");
 					} else {
 						$('.make-hidden').show();
 					}
@@ -144,7 +144,7 @@
 				die(mysqli_error($conn));
 			}
 		}
-		echo "<div class='col-md-12 text-center success-msg'><h3>Done!</h3></div>";
+		echo "<div class='col-md-12 text-center success-msg'><h3>Prezenca u krye me sukses!</h3></div>";
 	}
 
 

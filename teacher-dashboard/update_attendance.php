@@ -1,6 +1,6 @@
 <?php require_once "includes/header.php"; ?>
 <div class="panel panel-info">
-<div class="panel-heading"><h3>See/Update attendance</h3></div>
+<div class="panel-heading"><h3>Shiko/Ndrysho Prezencën</h3></div>
 <?php
 	$session_user = $_SESSION['username'];
 ?>
@@ -14,7 +14,7 @@
 		<div class="col-md-12">
 			<div class="alert alert-success alert-dismissible" role="alert">
 			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			  <strong>Attendance Updated!</strong>
+			  <strong>Prezenca u ndyshua me sukses!</strong>
 			</div>
 		</div>
 	</div>
@@ -25,10 +25,10 @@
 		<table class="table table-bordered">
 			<thead>
 				<tr>
-					<th>Class</th>
-					<th>Subject</th>
-					<th>Class Time</th>
-					<th>Action</th>
+					<th>Klasa</th>
+					<th>Lënda</th>
+					<th>Orari</th>
+					<th>Aksioni</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -48,7 +48,7 @@
 						echo "<td>$global_name</td>";
 						echo "<td>". get_subject_name_by_id($subject_name_id) ."</td>";
 						echo "<td>$class_time</td>";
-						echo "<td><a class='btn btn-info' href='update_attendance.php?global_name_id=$global_name_id'>See/Update attendance</a></td>";
+						echo "<td><a class='btn btn-info' href='update_attendance.php?global_name_id=$global_name_id'>Shiko/Ndrysho Prezencën</a></td>";
 						
 						#if($is_class_teacher == 'Y') {
 						#	echo "</tr>";
@@ -68,7 +68,7 @@ if(isset($_GET['global_name_id'])) {
 ?>
 <div class="col-md-6 col-md-offset-3">
 	<div class="form-group">
-		<label for="">Select Date</label>
+		<label for="">Data</label>
 		<input type="text" name="select_date" class="custom-date select_date form-control" placeholder="YYYY/MM/DD" value="" autocomplete="off">
 	</div>
 </div>
@@ -133,7 +133,7 @@ if(isset($_GET['global_name_id'])) {
 				die(mysqli_error($conn));
 			}
 		}
-		echo "<div class='col-md-12 text-center success-msg hide-please'><h3>Updated!</h3></div>";
+		echo "<div class='col-md-12 text-center success-msg hide-please'><h3>Ndyshimi u bë me sukses!</h3></div>";
 	}
 ?>
 

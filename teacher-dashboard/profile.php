@@ -63,7 +63,7 @@
 						<td><?php echo $teacher_email; ?></td>
 					</tr>
 					<tr>
-						<td>Address</td>
+						<td>Adresa</td>
 						<td><?php echo $teacher_address; ?></td>
 					</tr>
 

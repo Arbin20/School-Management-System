@@ -1,12 +1,12 @@
 <?php require_once "includes/header.php"; ?>
 <div class="panel panel-info">
-<div class="panel-heading"><h2 class="text-center">All students of this class</h2></div>
+<div class="panel-heading"><h2 class="text-center">Nxënësit e Klasës</h2></div>
 <table class="table table-bordered table-stripe">
 	<thead>
 		<tr>
-			<th>Student ID</th>
-			<th>Name</th>
-			<th>Roll</th>
+			<th>ID e Nxënësit</th>
+			<th>Emri</th>
+			<th>NR</th>
 		</tr>
 	</thead>
 	<tbody>
