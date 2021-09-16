@@ -10,15 +10,15 @@ if(isset($_POST['search_value'])) {
 	$output = '<table class="table table-centered table-bordered">
 		<thead>
 			<tr>
-				<th>First Name</th>
-				<th>Last Name</th>
+				<th>Emri</th>
+				<th>Mbiemri</th>
 				<th>Email</th>
-				<th>Class</th>
-				<th>Section</th>
-				<th>Group</th>
-				<th>Roll</th>
-				<th>Edit</th>
-				<th>Delete</th>
+				<th>Klasa</th>
+				<th>Seksioni</th>
+				<th>Grupi</th>
+				<th>Nr</th>
+				<th>Ndrysho</th>
+				<th>Fshij</th>
 			</tr>
 		</thead>
 			<tbody>';

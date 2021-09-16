@@ -4,7 +4,7 @@
 ?>
 <?php 
 	if(isset($_GET['message']) && $_GET['message'] == "success") {
-		echo "<p class='bg-success'>Teacher updated! <a href='teachers.php'>Shiko të gjithë Arsimtarët</a></p>";
+		echo "<p class='bg-success'>Të dhënat e Arsimtarit u ndryshuan me sukses! <a href='teachers.php'>Shiko të gjithë Arsimtarët</a></p>";
 	}
 ?>
 <form action="" method="post" enctype="multipart/form-data">

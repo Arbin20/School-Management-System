@@ -1,12 +1,12 @@
 <?php require_once "includes/header.php"; ?>
-	<h1>Students</h1>
+	<h1>Nxënësit</h1>
 	<?php if(!isset($_GET['action'])) { ?>
 		<div class="col-md-8">
-			<a href="students.php?action=add_new" class="btn btn-info pull-right">Add new student</a>
+			<a href="students.php?action=add_new" class="btn btn-info pull-right">Shto Nxënës të ri</a>
 		</div>
 		<div class="col-md-4">
 			<div class="form-group">
-				<input type="text" id="search-students" class="form-control" name="search_students" placeholder="Student id search..">
+				<input type="text" id="search-students" class="form-control" name="search_students" placeholder="Kërko Nxënësin përmes ID-së..">
 			</div>
 		</div>
 	<?php } ?>

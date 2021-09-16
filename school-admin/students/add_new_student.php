@@ -1,7 +1,7 @@
 <?php $error = register_student(); ?>
 <?php 
 	if(isset($_GET['message']) && $_GET['message'] == "success") {
-		echo "<p class='bg-success'>Student added! <a href='students.php'>View all students here</a></p>";
+		echo "<p class='bg-success'>Nxënësi u shtua me sukses! <a href='students.php'>Shiko të gjithë Nxënësit</a></p>";
 	}
 	if(!empty($error)) {
 		echo "<p class='bg-danger'>$error</p>";
@@ -10,13 +10,13 @@
 <form action="" method="post">
 	<div class="col-md-6">
 		<div class="form-group">
-			<label for="">First Name</label>
+			<label for="">Emri</label>
 			<input type="text" name="user_firstname" class="form-control">
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
-			<label for="">Last Name</label>
+			<label for="">Mbiemri</label>
 			<input type="text" name="user_lastname" class="form-control">
 		</div>
 	</div>
@@ -24,7 +24,7 @@
 		<div class="form-group">
 			<label for="">Class</label>
 			<select name="student_class" class="form-control" id="student-class">
-				<option value="">Select Class</option>
+				<option value="">Zgjedheni Klasën</option>
 				<?php
 					$query = "SELECT * FROM class";
 					$result = mysqli_query($conn, $query);
@@ -39,9 +39,9 @@
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Section</label>
+			<label for="">Seksioni</label>
 			<select name="student_section" class="form-control" id="student-section">
-				<option value="">Select Section</option>
+				<option value="">Zgjedheni Seksionin</option>
 				<option value="A">A</option>
 				<option value="B">B</option>
 				<option value="C">C</option>
@@ -53,20 +53,20 @@
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Groups</label>
+			<label for="">Grupet</label>
 			<select name="student_group" class="form-control" id="student-group" readonly>
-				<option value="">Select Group</option>
-				<option value="Science">Science</option>
-				<option value="Humanities">Humanities</option>
-				<option value="Commerce">Commerce</option>
+				<option value="">Zgjedheni Grupin</option>
+				<option value="Science">Shkenca</option>
+				<option value="Humanities">Shoqëror/Përgjithshëm</option>
+				<option value="Commerce">Biznes/Reklamë</option>
 			</select>
 		</div>
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Admission Year</label>
+			<label for="">Viti i Regjistrimit</label>
 			<select name="admission_year" id="admission_year" class="form-control">
-				<option value="">Select One</option>
+				<option value="">Zgjedheni Vitin</option>
 			<?php
 				$year = date("Y");
 				$count = $year + 7;
@@ -79,33 +79,33 @@
 	</div>
 	<div class="col-md-5">
 		<div class="form-group">
-			<label for="">Username</label>
+			<label for="">Përdoruesi</label>
 			<input type="email" name="username" class="form-control" id="student-username" readonly>
 		</div>
 	</div>
 	<div class="col-md-4">
 		<div class="form-group">
-			<label for="">Password</label>
+			<label for="">Fjalëkalimi</label>
 			<input type="text" name="user_password" class="form-control">
 		</div>
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Roll</label>
+			<label for="">Nr</label>
 			<input type="text" name="student_roll" class="form-control" id="student-roll" readonly>
 		</div>
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Date of Birth</label>
+			<label for="">Ditëlindja</label>
 			<input type="text" name="student_dob" class="form-control custom-date">
 		</div>
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Blood Group</label>
+			<label for="">Grupi i Gjakut</label>
 			<select name="student_blood_group" class="form-control" id="blood-group">
-				<option value="">Select One</option>
+				<option value="">Zgjedheni grupin e Gjakut</option>
 				<option value="AB+">AB+</option>
 				<option value="A+">A+</option>
 				<option value="B+">B+</option>
@@ -119,53 +119,53 @@
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Gender</label>
+			<label for="">Gjinia</label>
 			<select name="student_gender" class="form-control" id="student-gender">
-				<option value="">Select One</option>
-				<option value="Male">Male</option>
-				<option value="Female">Female</option>
-				<option value="Other">Other</option>
+				<option value="">Zgjedheni Gjininë</option>
+				<option value="Male">Mashkull</option>
+				<option value="Female">Femër</option>
+				<!--<option value="Other">Other</option>-->
 			</select>
 		</div>
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Student Status</label>
+			<label for="">Statusi i Nxënësit</label>
 			<select name="student_status" class="form-control" id="">
-				<option value="active">Active</option>
-				<option value="inactive">Inactive</option>
-				<option value="completed">Completed</option>
-				<option value="failed">Failed</option>
+				<option value="active">Aktiv</option>
+				<option value="inactive">JoAktiv</option>
+				<option value="completed">Kompletuar</option>
+				<option value="failed">Dështuar</option>
 			</select>
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
-			<label for="">Father's Name</label>
+			<label for="">Emri i Babës</label>
 			<input type="text" name="student_father_name" class="form-control">
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
-			<label for="">Mother's Name</label>
+			<label for="">Emri i Nënës</label>
 			<input type="text" name="student_mother_name" class="form-control">
 		</div>
 	</div>
 	<div class="col-md-12">
 		<div class="form-group">
-			<label for="">Address</label>
+			<label for="">Adresa</label>
 			<textarea name="student_address" class="form-control" id="" cols="32" rows="6"></textarea>
 		</div>
 	</div>
 	<div class="col-md-12">
 		<div class="form-group">
-			<label for="">Parents Contact</label>
+			<label for="">Numri i Prindërit</label>
 			<input type="text" name="student_contact" class="form-control">
 		</div>
 	</div>
 	<div class="col-md-12">
 		<div class="form-group">
-			<input type="submit" Value="Add Student" class="btn btn-info" name="add_student_btn">
+			<input type="submit" Value="Regjistro Nxënësin" class="btn btn-info" name="add_student_btn">
 		</div>
 	</div>
 </form>

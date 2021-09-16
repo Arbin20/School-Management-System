@@ -1,7 +1,7 @@
 <?php $error = register_teacher(); ?>
 <?php 
 	if(isset($_GET['message']) && $_GET['message'] == "success") {
-		echo "<p class='bg-success'>Teacher added! <a href='teachers.php'>Shiko të gjithë Arsimtarët</a></p>";
+		echo "<p class='bg-success'>Arsimtari u shtua me sukses! <a href='teachers.php'>Shiko të gjithë Arsimtarët</a></p>";
 	}
 	if(!empty($error)) {
 		echo "<p class='bg-danger'>$error</p>";

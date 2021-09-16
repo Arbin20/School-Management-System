@@ -4,37 +4,37 @@
 ?>
 <?php 
 	if(isset($_GET['message']) && $_GET['message'] == "success") {
-		echo "<p class='bg-success'>Student updated! <a href='students.php'>View all students</a></p>";
+		echo "<p class='bg-success'>Të dhënat e Nxënësit u ndryshuan me sukses! <a href='students.php'>Shiko të gjithë Nxënësit</a></p>";
 	}
 ?>
 <form action="" method="post">
 	<div class="col-md-6">
 		<div class="form-group">
-			<label for="">First Name</label>
+			<label for="">Emri</label>
 			<input type="text" name="user_firstname" class="form-control" value="<?php echo $students_data['user_firstname']; ?>" >
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
-			<label for="">Last Name</label>
+			<label for="">Mbiemri</label>
 			<input type="text" name="user_lastname" class="form-control" value="<?php echo $students_data['user_lastname']; ?>">
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
-			<label for="">Username</label>
+			<label for="">Përdoruesi</label>
 			<input type="email" name="username" class="form-control" value="<?php echo $students_data['username']; ?>" readonly>
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
-			<label for="">Password</label>
+			<label for="">Fjalëkalimi</label>
 			<input type="text" name="user_password" class="form-control">
 		</div>
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Class</label>
+			<label for="">Klasa</label>
 			<?php
 				$s_id = $_GET['s_id'];
 				$query = "SELECT student_class FROM students WHERE id=$s_id";
@@ -55,7 +55,7 @@
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Section</label>
+			<label for="">Seksioni</label>
 			<?php
 				$s_id = $_GET['s_id'];
 				$query_2 = "SELECT student_section FROM students WHERE id=$s_id";
@@ -65,7 +65,7 @@
 				$studentSec = $row['student_section'];
 			?>
 			<select name="student_section" class="form-control" id="student-section">
-				<option value="">Select Section</option>
+				<option value="">Zgjedheni Seksionin</option>
 				<option value="A" <?php echo $studentSec == "A"? "selected" : ""; ?>>A</option>
 				<option value="B" <?php echo $studentSec == "B"? "selected" : ""; ?>>B</option>
 				<option value="C" <?php echo $studentSec == "C"? "selected" : ""; ?>>C</option>
@@ -77,7 +77,7 @@
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Groups</label>
+			<label for="">Grupi</label>
 			<?php
 				$s_id = $_GET['s_id'];
 				$query_3 = "SELECT student_group FROM students WHERE id=$s_id";
@@ -87,28 +87,28 @@
 				$studentGrp = $row['student_group'];
 			?>
 			<select name="student_group" class="form-control" id="student-group">
-				<option value="">Select Group</option>
-				<option value="Science" <?php echo $studentGrp == "Science"? "selected" : ""; ?>>Science</option>
-				<option value="Humanities" <?php echo $studentGrp == "Humanities"? "selected" : ""; ?>>Humanities</option>
-				<option value="Commerce" <?php echo $studentGrp == "Commerce"? "selected" : ""; ?>>Commerce</option>
+				<option value="">Zgjedheni Grupin</option>
+				<option value="Science" <?php echo $studentGrp == "Science"? "selected" : ""; ?>>Shkenca</option>
+				<option value="Humanities" <?php echo $studentGrp == "Humanities"? "selected" : ""; ?>>Shoqëror/Përgjithshëm</option>
+				<option value="Commerce" <?php echo $studentGrp == "Commerce"? "selected" : ""; ?>>Biznes/Reklam</option>
 			</select>
 		</div>
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Roll</label>
+			<label for="">Nr</label>
 			<input type="text" name="student_roll" class="form-control" value="<?php echo $students_data['student_roll']; ?>">
 		</div>
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Date of Birth</label>
+			<label for="">Ditëlindja</label>
 			<input type="text" name="student_dob" class="form-control custom-date" value="<?php echo $students_data['student_dob']; ?>">
 		</div>
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Blood Group</label>
+			<label for="">Grupi i Gjakut</label>
 			<?php
 				$s_id = $_GET['s_id'];
 				$query_4 = "SELECT student_blood_group FROM students WHERE id=$s_id";
@@ -118,7 +118,7 @@
 				$studentBloodGrp = $row['student_blood_group'];
 			?>
 			<select name="student_blood_group" class="form-control" id="blood-group">
-				<option value="">Select One</option>
+				<option value="">Zgjedheni grupin e Gjakut</option>
 				<option value="AB+" <?php echo $studentBloodGrp == "AB+"? "selected" : ""; ?>>AB+</option>
 				<option value="A+" <?php echo $studentBloodGrp == "A+"? "selected" : ""; ?>>A+</option>
 				<option value="B+" <?php echo $studentBloodGrp == "B+"? "selected" : ""; ?>>B+</option>
@@ -132,7 +132,7 @@
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Gender</label>
+			<label for="">Gjinia</label>
 			<?php
 				$s_id = $_GET['s_id'];
 				$query_5 = "SELECT student_gender FROM students WHERE id=$s_id";
@@ -142,16 +142,15 @@
 				$studentGender = $row['student_gender'];
 			?>
 			<select name="student_gender" class="form-control" id="student-gender">
-				<option value="">Select One</option>
-				<option value="Male" <?php echo $studentGender == "Male"? "selected" : ""; ?>>Male</option>
-				<option value="Female" <?php echo $studentGender == "Female"? "selected" : ""; ?>>Female</option>
-				<option value="Other" <?php echo $studentGender == "Other"? "selected" : ""; ?>>Other</option>
-			</select>
+				<option value="">Zgjedheni Gjininë</option>
+				<option value="Male" <?php echo $studentGender == "Male"? "selected" : ""; ?>>Mashkull</option>
+				<option value="Female" <?php echo $studentGender == "Female"? "selected" : ""; ?>>Femër</option>
+				</select>
 		</div>
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<label for="">Student Status</label>
+			<label for="">Statusi i Nxënësit</label>
 			<?php
 				$s_id = $_GET['s_id'];
 				$query_5 = "SELECT student_status FROM students WHERE id=$s_id";
@@ -161,41 +160,41 @@
 				$studentSts = $row['student_status'];
 			?>
 			<select name="student_status" class="form-control" id="">
-				<option value="">Select One</option>
-				<option value="active" <?php echo $studentSts == "active"? "selected" : ""; ?>>Active</option>
-				<option value="inactive" <?php echo $studentSts == "inactive"? "selected" : ""; ?>>Inactive</option>
-				<option value="completed" <?php echo $studentSts == "completed"? "selected" : ""; ?>>Completed</option>
-				<option value="failed" <?php echo $studentSts == "failed"? "selected" : ""; ?>>Failed</option>
+				<option value="">Zgjedheni Statusin</option>
+				<option value="active" <?php echo $studentSts == "active"? "selected" : ""; ?>>Aktiv</option>
+				<option value="inactive" <?php echo $studentSts == "inactive"? "selected" : ""; ?>>JoAktiv</option>
+				<option value="completed" <?php echo $studentSts == "completed"? "selected" : ""; ?>>Kompletuar</option>
+				<option value="failed" <?php echo $studentSts == "failed"? "selected" : ""; ?>>Dështuar</option>
 			</select>
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
-			<label for="">Father's Name</label>
+			<label for="">Emri i Babës</label>
 			<input type="text" name="student_father_name" class="form-control" value="<?php echo $students_data['student_father_name']; ?>">
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
-			<label for="">Mother's Name</label>
+			<label for="">Emri i Nënës</label>
 			<input type="text" name="student_mother_name" class="form-control" value="<?php echo $students_data['student_mother_name']; ?>">
 		</div>
 	</div>
 	<div class="col-md-12">
 		<div class="form-group">
-			<label for="">Address</label>
+			<label for="">Adresa</label>
 			<textarea name="student_address" class="form-control" id="" cols="30" rows="6"><?php echo $students_data['student_address']; ?></textarea>
 		</div>
 	</div>
 	<div class="col-md-12">
 		<div class="form-group">
-			<label for="">Parents Contact</label>
+			<label for="">Numri i Prindërit</label>
 			<input type="text" name="student_contact" class="form-control" value="<?php echo $students_data['student_contact']; ?>">
 		</div>
 	</div>
 	<div class="col-md-12">
 		<div class="form-group">
-			<input type="submit" Value="Update Student" class="btn btn-info" name="update_student_btn">
+			<input type="submit" Value="Ndrysho të Dhënat" class="btn btn-info" name="update_student_btn">
 		</div>
 	</div>
 </form>

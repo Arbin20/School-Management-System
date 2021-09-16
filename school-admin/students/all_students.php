@@ -2,16 +2,16 @@
 	<table class="table table-centered table-bordered">
 		<thead>
 			<tr>
-				<th>First Name</th>
-				<th>Last Name</th>
+				<th>Emri</th>
+				<th>Mbiemri</th>
 				<th>Email</th>
-				<th>Class</th>
-				<th>Section</th>
-				<th>Group</th>
-				<th>Roll</th>
-				<th>Status</th>
-				<th>Edit</th>
-				<th>Delete</th>
+				<th>Klasa</th>
+				<th>Seksioni</th>
+				<th>Grupi</th>
+				<th>Nr</th>
+				<th>Statusi</th>
+				<th>Ndrysho</th>
+				<th>Fshij</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -61,8 +61,8 @@
 						echo "<td>$student_group</td>";
 						echo "<td>$student_roll</td>";
 						echo "<td>$student_status</td>";
-						echo "<td><a class='btn btn-info' href='students.php?action=edit_student&s_id=$id'>Edit</a></td>";
-						echo "<td><a class='btn btn-danger' href='students.php?action=delete_student&s_id=$id'>Delete</a></td>";
+						echo "<td><a class='btn btn-info' href='students.php?action=edit_student&s_id=$id'>Ndrysho</a></td>";
+						echo "<td><a class='btn btn-danger' href='students.php?action=delete_student&s_id=$id'>Fshij</a></td>";
 					echo "</tr>";
 				}
 
@@ -70,9 +70,9 @@
 		</tbody>
 	</table>
 	<ul class="pagination pull-right">
-	    <li><a href="?pageno=1">First</a></li>
+	    <li><a href="?pageno=1">Fillim</a></li>
 	    <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
-	        <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>">Prev</a>
+	        <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>">Mbrapa</a>
 	    </li>
 
 	    <?php for($i = 1; $i <= $total_pages; $i++) { ?>
@@ -82,9 +82,9 @@
 	     <?php } ?>
 
 	    <li class="<?php if($pageno >= $total_pages){ echo 'disabled'; } ?>">
-	        <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo "?pageno=".($pageno + 1); } ?>">Next</a>
+	        <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo "?pageno=".($pageno + 1); } ?>">Para</a>
 	    </li>
-	    <li><a href="?pageno=<?php echo $total_pages; ?>">Last</a></li>
+	    <li><a href="?pageno=<?php echo $total_pages; ?>">Fund</a></li>
 	</ul>
 </div>
 
