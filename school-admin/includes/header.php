@@ -25,7 +25,7 @@
 			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
+					<span class="sr-only">Navigimi</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -35,60 +35,59 @@
 				
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav side-nav">
-						<li><a href="index.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-						<li><a href="class.php"><i class="fa fa-home"></i> Class</a></li>
-						<li><a href="class_time.php"><i class="fa fa-home"></i> Class Time</a></li>
-						<li><a href="sections.php"><i class="fa fa-code-fork"></i> Sections</a></li>
-						<li><a href="subjects.php"><i class="fa fa-book"></i> Subjects</a></li>
-						<li><a href="assign_teacher.php"><i class="fa fa-user"></i> Assign Teacher</a></li>
+						<li><a href="index.php"><i class="fa fa-dashboard"></i> Paneli Kryesor</a></li>
+						<li><a href="class.php"><i class="fa fa-home"></i> Klasat</a></li>
+						<li><a href="class_time.php"><i class="fa fa-home"></i> Orari</a></li>
+						<li><a href="sections.php"><i class="fa fa-code-fork"></i> Seksioni</a></li>
+						<li><a href="subjects.php"><i class="fa fa-book"></i> Lëndët</a></li>
+						<li><a href="assign_teacher.php"><i class="fa fa-user"></i> Caktimi i Arsimtarëve</a></li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Teachers <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Arsimtarët <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="teachers.php">All Teachers</a></li>
-								<li><a href="teachers.php?action=add_new">Add New Teacher</a></li>
+								<li><a href="teachers.php">Të gjithë Arsimtarët</a></li>
+								<li><a href="teachers.php?action=add_new">Shto Arsimtar</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-users"></i> Students <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-users"></i> Nxënësit <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="students.php">All Students</a></li>
-								<li><a href="students.php?action=add_new">Add New Student</a></li>
+								<li><a href="students.php">Të gjithë Nxënësit</a></li>
+								<li><a href="students.php?action=add_new">Shto Nxënës të ri</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Notices <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Lajmërimet <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="notices.php">All Notices</a></li>
-								<li><a href="notices.php?action=add_new">Add New Notice</a></li>
+								<li><a href="notices.php">Të gjithë Lajmërimet</a></li>
+								<li><a href="notices.php?action=add_new">Shto Lajmërim të ri</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar"></i> Events <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar"></i> Ngjarjet <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="events.php">All Events</a></li>
-								<li><a href="events.php?action=add_new">Add New Event</a></li>
+								<li><a href="events.php">Të gjithë Ngjarjet</a></li>
+								<li><a href="events.php?action=add_new">Shto Ngjarje të re</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-book"></i> Pages <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-book"></i> Faqet <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="content_about.php">About Page</a></li>
-								<li><a href="content_teacher.php">Teacher Page</a></li>
-								<li><a href="content_admission.php">Admission Page</a></li>
-								<li><a href="content_gallery.php">Gallery Page</a></li>
+								<li><a href="content_about.php">Rreth Shkollës</a></li>
+								<li><a href="content_teacher.php">Faqja e Arsimtarëve</a></li>
+								<li><a href="content_gallery.php">Faqja e Fotografive</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i> School info <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i> Informacionet e Shkollës  <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="content_school_name.php">School Name</a></li>
-								<li><a href="content_school_address.php">School Address</a></li>
-								<li><a href="content_logo.php">School Logo</a></li>
+								<li><a href="content_school_name.php">Emri i Shkollës</a></li>
+								<li><a href="content_school_address.php">Adresa e Shkollës</a></li>
+								<li><a href="content_logo.php">Emblema e Shkollës</a></li>
 							</ul>
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right navbar-user">
-						<li><a href="../index.php" target="_blank">Kthehu në Uebfaqe</a></li>
+						<li><a href="../index.php" target="_blank">KTHEHU TE UEBFAQJA</a></li>
 						<li class="dropdown user-dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo get_name_by_session(); ?> <b class="caret"></b></a>
 							<ul class="dropdown-menu">

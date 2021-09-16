@@ -10,39 +10,39 @@
 <form action="" method="post" enctype="multipart/form-data">
 	<div class="col-md-6">
 		<div class="form-group">
-			<label for="">First Name</label>
+			<label for="">Emri</label>
 			<input type="text" name="teacher_first_name" class="form-control">
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
-			<label for="">Last Name</label>
+			<label for="">Mbiemri</label>
 			<input type="text" name="teacher_last_name" class="form-control">
 		</div>
 	</div>
 	<div class="col-md-4">
 		<div class="form-group">
-			<label for="">Designation</label>
+			<label for="">Përcaktimi</label>
 			<select name="teacher_designation" class="form-control" id="">
-				<option value="">Select One</option>
-				<option value="Assistant Teacher">Assistant Teacher</option>
-				<option value="Senior Teacher">Senior Teacher</option>
-				<option value="Junior Teacher">Junior Teacher</option>
-				<option value="Headmaster">Headmaster</option>
-				<option value="Assistant Headmaster">Assistant Headmaster</option>
-				<option value="Sports Teacher">Sports Teacher</option>
-				<option value="Proxy Teacher">Proxy Teacher</option>
+				<option value="">Zgjedheni një prej opcioneve</option>
+				<option value="Assistant Teacher">Asistent</option>
+				<option value="Senior Teacher">Mësues i Lartë</option>
+				<option value="Junior Teacher">Praktikant</option>
+				<option value="Headmaster">Drejtor</option>
+				<option value="Assistant Headmaster">Asistent Drejtor</option>
+				<option value="Sports Teacher">Mësues Sporti</option>
+				<option value="Proxy Teacher">Mësues Përfaqësues</option>
 			</select>
 		</div>
 	</div>
 	<div class="col-md-4">
 		<div class="form-group">
-			<label for="">Gender</label>
+			<label for="">Gjinia</label>
 			<select name="teacher_gender" class="form-control" id="">
-				<option value="">Select One</option>
-				<option value="Male">Male</option>
-				<option value="Female">Female</option>
-				<option value="Other">Other</option>
+				<option value="">Zgjedheni Gjininë</option>
+				<option value="Male">Mashkull</option>
+				<option value="Female">Femër</option>
+				<!--<option value="Other">Other</option> -->
 			</select>
 		</div>
 	</div>
