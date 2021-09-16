@@ -1,7 +1,7 @@
 <?php $error = register_teacher(); ?>
 <?php 
 	if(isset($_GET['message']) && $_GET['message'] == "success") {
-		echo "<p class='bg-success'>Teacher added! <a href='teachers.php'>View all teachers here</a></p>";
+		echo "<p class='bg-success'>Teacher added! <a href='teachers.php'>Shiko të gjithë Arsimtarët</a></p>";
 	}
 	if(!empty($error)) {
 		echo "<p class='bg-danger'>$error</p>";
@@ -54,29 +54,29 @@
 	</div>
 	<div class="col-md-12">
 		<div class="form-group">
-			<label for="">Photo</label>
+			<label for="">Fotografi</label>
 			<input type="file" name="teacher_image" class="form-control">
 		</div>
 	</div>
 	<div class="col-md-12">
 		<div class="form-group">
-			<label for="">Qualification</label>
+			<label for="">Kualifikimi</label>
 			<textarea name="teacher_qualification" class="form-control" id="" cols="30" rows="6"></textarea>
 		</div>
 		<div class="form-group">
-			<label for="">Address</label>
+			<label for="">Adresa</label>
 			<textarea name="teacher_address" class="form-control" id="" cols="30" rows="6"></textarea>
 		</div>
 		<div class="form-group">
-			<label for="">Contact</label>
+			<label for="">Kontakti</label>
 			<input type="text" name="teacher_contact" class="form-control">
 		</div>
 		<div class="form-group">
-			<label for="">Password</label>
+			<label for="">Fjalëkalimi</label>
 			<input type="password" name="password" class="form-control">
 		</div>
 		<div class="form-group">
-			<input type="submit" Value="Add Teacher" class="btn btn-info" name="add_teacher_btn">
+			<input type="submit" Value="Regjistro Mësuesin" class="btn btn-info" name="add_teacher_btn">
 		</div>
 	</div>
 </form>
