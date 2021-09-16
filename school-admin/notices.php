@@ -1,5 +1,5 @@
 <?php require_once "includes/header.php"; ?>
-	<h1>Notice <span class="pull-right"><a href="notices.php?action=add_new" class="btn btn-info">Add new notice</a></span></h1>
+	<h1>Lajmërimet <span class="pull-right"><a href="notices.php?action=add_new" class="btn btn-info">Shto Lajmërim të ri</a></span></h1>
 	<?php 
 		if(isset($_GET['action'])) {
 			$action = $_GET['action'];
