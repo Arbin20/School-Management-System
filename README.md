@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-This project is created for Capstone 
 Author: Arbin Qazimi
 
 Installation: Step 1. Download Zip or clone with terminal to your htdocs folder -> User/YourPC/xammp/htdocs 
