@@ -48,8 +48,8 @@ if(isset($_POST['search_value'])) {
 		$output .= "<td>$student_section</td>";
 		$output .= "<td>$student_group</td>";
 		$output .= "<td>$student_roll</td>";
-		$output .= "<td><a class='btn btn-info' href='students.php?action=edit_student&s_id=$id'>Edit</a></td>";
-		$output .= "<td><a class='btn btn-danger' href='students.php?action=delete_student&s_id=$id'>Delete</a></td>";
+		$output .= "<td><a class='btn btn-info' href='students.php?action=edit_student&s_id=$id'>Ndrysho</a></td>";
+		$output .= "<td><a class='btn btn-danger' href='students.php?action=delete_student&s_id=$id'>Fshij</a></td>";
 		$output .= "</tr>";
 
 	}
