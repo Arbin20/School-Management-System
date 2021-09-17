@@ -37,7 +37,7 @@
 					<ul class="nav navbar-nav side-nav">
 						<li><a href="index.php"><i class="fa fa-dashboard"></i> Paneli Kryesor</a></li>
 						<li><a href="class.php"><i class="fa fa-home"></i> Klasat</a></li>
-						<li><a href="class_time.php"><i class="fa fa-home"></i> Orari</a></li>
+						<li><a href="class_time.php"><i class="fa fa-clock-o"></i> Orari</a></li>
 						<li><a href="sections.php"><i class="fa fa-code-fork"></i> Seksioni</a></li>
 						<li><a href="subjects.php"><i class="fa fa-book"></i> Lëndët</a></li>
 						<li><a href="assign_teacher.php"><i class="fa fa-user"></i> Caktimi i Arsimtarëve</a></li>
@@ -87,7 +87,7 @@
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right navbar-user">
-						<li><a href="../index.php" target="_blank">KTHEHU TE UEBFAQJA</a></li>
+						<li><a href="../index.php" target="_blank">Kthehu te Faqja</a></li>
 						<li class="dropdown user-dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo get_name_by_session(); ?> <b class="caret"></b></a>
 							<ul class="dropdown-menu">
