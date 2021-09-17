@@ -1,13 +1,13 @@
 <?php require_once "includes/header.php"; ?>
-	<h1>Gallery Page Content</h1>
+	<h1>Emblema e Shkollës</h1>
 	<?php logo_content_update(); ?>
 	<form action="" method="post" enctype="multipart/form-data">
 		<div class="form-group">
-			<label for="">Add Gallery Image</label>
+			<label for="">Shto Emblemën (logo)</label>
 			<input type="file" class="form-control" name="logo_content">
 		</div>
 		<div class="form-group">
-			<input type="submit" value="Save" class="btn btn-info" name="save_logo_content">
+			<input type="submit" value="Ruaj" class="btn btn-info" name="save_logo_content">
 		</div>
 	</form>
 

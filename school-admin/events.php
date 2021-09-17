@@ -1,5 +1,5 @@
 <?php require_once "includes/header.php"; ?>
-	<h1>Events <span class="pull-right"><a href="events.php?action=add_new" class="btn btn-info">Add new events</a></span></h1>
+	<h1>Eventet <span class="pull-right"><a href="events.php?action=add_new" class="btn btn-info">Shto Event të ri</a></span></h1>
 	<?php 
 		if(isset($_GET['action'])) {
 			$action = $_GET['action'];

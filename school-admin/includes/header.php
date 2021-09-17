@@ -58,15 +58,15 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Lajmërimet <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="notices.php">Të gjithë Lajmërimet</a></li>
+								<li><a href="notices.php">Të gjitha Lajmërimet</a></li>
 								<li><a href="notices.php?action=add_new">Shto Lajmërim të ri</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar"></i> Ngjarjet <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar"></i> Eventet <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="events.php">Të gjithë Ngjarjet</a></li>
-								<li><a href="events.php?action=add_new">Shto Ngjarje të re</a></li>
+								<li><a href="events.php">Të gjitha Eventet</a></li>
+								<li><a href="events.php?action=add_new">Shto Event të re</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
