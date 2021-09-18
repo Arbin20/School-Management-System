@@ -49,10 +49,7 @@
 						echo "<td>". get_subject_name_by_id($subject_name_id) ."</td>";
 						echo "<td>$class_time</td>";
 						echo "<td><a class='btn btn-info' href='update_attendance.php?global_name_id=$global_name_id'>Shiko/Ndrysho Prezencën</a></td>";
-						
-						#if($is_class_teacher == 'Y') {
-						#	echo "</tr>";
-						#}
+					
 					}
 				?>
 			</tbody>
