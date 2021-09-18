@@ -1,16 +1,16 @@
 <div class="panel panel-success">
-	<div class="panel-heading"><h3>Links</h3></div>
+	<div class="panel-heading"><h3>Linqet</h3></div>
 	<div class="panel-body">
 		<ul class="student-side-menu">
-			<li><a href="my_result.php">Result</a></li>
-			<li><a href="submit_problem.php">Submit Problem</a></li>
-			<li><a href="my_routine.php">Routine</a></li>
+			<li><a href="my_result.php">Rezultatet</a></li>
+			<li><a href="submit_problem.php">Paraqit Problemin</a></li>
+			<li><a href="my_routine.php">Orari</a></li>
 		</ul>
 	</div>
 </div>
 <div class="notice-block">
 	<div class="panel panel-success">
-	<div class="panel-heading"><h3>NOTICES</h3></div>
+	<div class="panel-heading"><h3>Njoftimet</h3></div>
 	<div class="panel-body">
 	<?php 
 		$query = "SELECT * FROM notice ORDER BY id DESC LIMIT 5";

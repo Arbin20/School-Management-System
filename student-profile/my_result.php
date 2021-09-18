@@ -29,31 +29,31 @@
 	<div class="row">
 		<div class="col-md-4">
 			<div class="panel panel-info">
-			<div class="panel-heading">Classes</div>
+			<div class="panel-heading">Klasat</div>
 			<ul class="nav nav-pills nav-stacked">
-				<li class="active"><a href="#6a" data-toggle="tab">Class 6 (Mid)</a></li>
-				<li><a href="#6b" data-toggle="tab">Class 6 (Final)</a></li>
-				<li><a href="#7a" data-toggle="tab">Class 7 (Mid)</a></li>
-				<li><a href="#7b" data-toggle="tab">Class 7 (Final)</a></li>
-				<li><a href="#8a" data-toggle="tab">Class 8 (Mid)</a></li>
-				<li><a href="#8b" data-toggle="tab">Class 8 (Test)</a></li>
-				<li><a href="#9a" data-toggle="tab">Class 9 (Mid)</a></li>
-				<li><a href="#9b" data-toggle="tab">Class 9 (Final)</a></li>
-				<li><a href="#10a" data-toggle="tab">Class 10 (Pre Test)</a></li>
-				<li><a href="#10b" data-toggle="tab">Class 10 (Test)</a></li>
+				<li class="active"><a href="#6a" data-toggle="tab">Klasa e 6 (Nota 1)</a></li>
+				<li><a href="#6b" data-toggle="tab">Klasa e 6 (Nota 2)</a></li>
+				<li><a href="#7a" data-toggle="tab">Klasa e 7 (Nota 1)</a></li>
+				<li><a href="#7b" data-toggle="tab">Klasa e 7 (Nota 2)</a></li>
+				<li><a href="#8a" data-toggle="tab">Klasa e 8 (Nota 1)</a></li>
+				<li><a href="#8b" data-toggle="tab">Klasa e 8 (Nota 2)</a></li>
+				<li><a href="#9a" data-toggle="tab">Klasa e 9 (Nota 1)</a></li>
+				<li><a href="#9b" data-toggle="tab">Klasa e 9 (Nota 2)</a></li>
+				<li><a href="#10a" data-toggle="tab">Klasa e 10 (Nota 1)</a></li>
+				<li><a href="#10b" data-toggle="tab">Klasa e 10 (Nota 2)</a></li>
 			</ul>
 			</div>
 		</div>
 		<div class="col-md-8">
 		<div class="tab-content clearfix" id="printTable">
 			<div class="panel panel-info tab-pane active" id="6a">
-				<div class="panel-heading">Class 06 (Mid)</div>
+				<div class="panel-heading">Klasa e 6 (Nota 1)</div>
 				<table class="table table-striped" id="PrintClass6">
 					<thead>
 						<tr>
-							<th>Subject</th>
-							<th>Marks</th>
-							<th>Grade</th>
+							<th>Lënda</th>
+							<th>Pikët</th>
+							<th>Nota</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -84,22 +84,22 @@
 						}
 					?>
 					<tr>
-						<th>Total</th>
+						<th>Totali</th>
 						<th><?php echo $totalMarks; ?></th>
 						<th><?php echo final_grading_point($totalGrades, $totalSubjects); ?></th>
 					</tr>
 					</tbody>
 				</table>
-				<button onclick='printDiv("PrintClass6")' class="btn btn-info pull-right">Print</button>
+				<button onclick='printDiv("PrintClass6")' class="btn btn-info pull-right">Printo</button>
 			</div>
 			<div class="panel panel-info tab-pane" id="6b">
-				<div class="panel-heading">Class 06 (Final)</div>
+				<div class="panel-heading">Klasa e 6 (Nota 2)</div>
 				<table class="table table-striped" id="PrintClass6final">
 					<thead>
 						<tr>
-							<th>Subject</th>
-							<th>Marks</th>
-							<th>Grade</th>
+							<th>Lënda</th>
+							<th>Pikët</th>
+							<th>Nota</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -130,22 +130,22 @@
 						}
 					?>
 					<tr>
-						<th>Total</th>
+						<th>Totali</th>
 						<th><?php echo $totalMarks; ?></th>
 						<th><?php echo final_grading_point($totalGrades, $totalSubjects); ?></th>
 					</tr>
 					</tbody>
 				</table>
-				<button onclick='printDiv("PrintClass6final")' class="btn btn-info pull-right">Print</button>
+				<button onclick='printDiv("PrintClass6final")' class="btn btn-info pull-right">Printo</button>
 			</div> <!-- panel -->
 			<div class="panel panel-info tab-pane" id="7a">
-				<div class="panel-heading">Class 07 (Mid)</div>
+				<div class="panel-heading">Klasa e 7 (Nota 1)</div>
 				<table class="table table-striped" id="PrintClass7mid">
 					<thead>
 						<tr>
-							<th>Subject</th>
-							<th>Marks</th>
-							<th>Grade</th>
+							<th>Lënda</th>
+							<th>Pikët</th>
+							<th>Nota</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -176,22 +176,22 @@
 						}
 					?>
 					<tr>
-						<th>Total</th>
+						<th>Totali</th>
 						<th><?php echo $totalMarks; ?></th>
 						<th><?php echo final_grading_point($totalGrades, $totalSubjects); ?></th>
 					</tr>
 					</tbody>
 				</table>
-				<button onclick='printDiv("PrintClass7mid")' class="btn btn-info pull-right">Print</button>
+				<button onclick='printDiv("PrintClass7mid")' class="btn btn-info pull-right">Printo</button>
 			</div> <!-- panel -->
 			<div class="panel panel-info tab-pane" id="7b">
-				<div class="panel-heading">Class 07 (Final)</div>
-				<table class="table table-striped">
+				<div class="panel-heading">Klasa e 7 (Nota 2)</div>
+				<table class="table table-striped" id="PrintClass7final">
 					<thead>
 						<tr>
-							<th>Subject</th>
-							<th>Marks</th>
-							<th>Grade</th>
+							<th>Lënda</th>
+							<th>Pikët</th>
+							<th>Nota</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -222,21 +222,24 @@
 						}
 					?>
 					<tr>
-						<th>Total</th>
+						<th>Totali</th>
 						<th><?php echo $totalMarks; ?></th>
 						<th><?php echo final_grading_point($totalGrades, $totalSubjects); ?></th>
 					</tr>
+					
 					</tbody>
+					
 				</table>
+				<button onclick='printDiv("PrintClass7final")' class="btn btn-info pull-right">Printo</button>
 			</div> <!-- panel -->
 			<div class="panel panel-info tab-pane" id="8a">
-				<div class="panel-heading">Class 08 (Mid)</div>
-				<table class="table table-striped">
+				<div class="panel-heading">Klasa e 8 (Nota 1)</div>
+				<table class="table table-striped" id="PrintClass8">
 					<thead>
 						<tr>
-							<th>Subject</th>
-							<th>Marks</th>
-							<th>Grade</th>
+							<th>Lënda</th>
+							<th>Pikët</th>
+							<th>Nota</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -267,21 +270,22 @@
 						}
 					?>
 					<tr>
-						<th>Total</th>
+						<th>Totali</th>
 						<th><?php echo $totalMarks; ?></th>
 						<th><?php echo final_grading_point($totalGrades, $totalSubjects); ?></th>
 					</tr>
 					</tbody>
 				</table>
+				<button onclick='printDiv("PrintClass8")' class="btn btn-info pull-right">Printo</button>
 			</div> <!-- panel -->
 			<div class="panel panel-info tab-pane" id="8b">
-				<div class="panel-heading">Class 08 (Final Test)</div>
-				<table class="table table-striped">
+				<div class="panel-heading">Klasa e 8 (Nota 2)</div>
+				<table class="table table-striped" id="PrintClass8final">
 					<thead>
 						<tr>
-							<th>Subject</th>
-							<th>Marks</th>
-							<th>Grade</th>
+							<th>Lënda</th>
+							<th>Pikët</th>
+							<th>Nota</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -312,21 +316,22 @@
 						}
 					?>
 					<tr>
-						<th>Total</th>
+						<th>Totali</th>
 						<th><?php echo $totalMarks; ?></th>
 						<th><?php echo final_grading_point($totalGrades, $totalSubjects); ?></th>
 					</tr>
 					</tbody>
 				</table>
+				<button onclick='printDiv("PrintClass8final")' class="btn btn-info pull-right">Printo</button>
 			</div> <!-- panel -->
 			<div class="panel panel-info tab-pane" id="9a">
-				<div class="panel-heading">Class 09 (Mid)</div>
-				<table class="table table-striped">
+				<div class="panel-heading">Klasa e 9 (Nota 1)</div>
+				<table class="table table-striped" id="PrintClass9">
 					<thead>
 						<tr>
-							<th>Subject</th>
-							<th>Marks</th>
-							<th>Grade</th>
+							<th>Lënda</th>
+							<th>Pikët</th>
+							<th>Nota</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -357,21 +362,22 @@
 						}
 					?>
 					<tr>
-						<th>Total</th>
+						<th>Totali</th>
 						<th><?php echo $totalMarks; ?></th>
 						<th><?php echo final_grading_point($totalGrades, $totalSubjects); ?></th>
 					</tr>
 					</tbody>
 				</table>
+				<button onclick='printDiv("PrintClass9")' class="btn btn-info pull-right">Printo</button>
 			</div> <!-- panel -->
 			<div class="panel panel-info tab-pane" id="9b">
-				<div class="panel-heading">Class 09 (Final)</div>
-				<table class="table table-striped">
+				<div class="panel-heading">Klasa e 9 (Nota 2)</div>
+				<table class="table table-striped" id="PrintClass9final">
 					<thead>
 						<tr>
-							<th>Subject</th>
-							<th>Marks</th>
-							<th>Grade</th>
+							<th>Lënda</th>
+							<th>Pikët</th>
+							<th>Nota</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -402,21 +408,22 @@
 						}
 					?>
 					<tr>
-						<th>Total</th>
+						<th>Totali</th>
 						<th><?php echo $totalMarks; ?></th>
 						<th><?php echo final_grading_point($totalGrades, $totalSubjects); ?></th>
 					</tr>
 					</tbody>
 				</table>
+				<button onclick='printDiv("PrintClass9final")' class="btn btn-info pull-right">Printo</button>
 			</div> <!-- panel -->
 			<div class="panel panel-info tab-pane" id="10a">
-				<div class="panel-heading">Class 10 (Pre Test)</div>
-				<table class="table table-striped">
+				<div class="panel-heading">Klasa e 10 (Nota 1)</div>
+				<table class="table table-striped" id="PrintClass10">
 					<thead>
 						<tr>
-							<th>Subject</th>
-							<th>Marks</th>
-							<th>Grade</th>
+							<th>Lënda</th>
+							<th>Pikët</th>
+							<th>Nota</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -447,21 +454,22 @@
 						}
 					?>
 					<tr>
-						<th>Total</th>
+						<th>Totali</th>
 						<th><?php echo $totalMarks; ?></th>
 						<th><?php echo final_grading_point($totalGrades, $totalSubjects); ?></th>
 					</tr>
 					</tbody>
 				</table>
+				<button onclick='printDiv("PrintClass10")' class="btn btn-info pull-right">Printo</button>
 			</div> <!-- panel -->
 			<div class="panel panel-info tab-pane" id="10b">
-				<div class="panel-heading">Class 10 (Final Test)</div>
-				<table class="table table-striped">
+				<div class="panel-heading">Klasa e 10 (Nota 2)</div>
+				<table class="table table-striped" id="PrintClass10final">
 					<thead>
 						<tr>
-							<th>Subject</th>
-							<th>Marks</th>
-							<th>Grade</th>
+							<th>Lënda</th>
+							<th>Pikët</th>
+							<th>Nota</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -492,12 +500,13 @@
 						}
 					?>
 					<tr>
-						<th>Total</th>
+						<th>Totali</th>
 						<th><?php echo $totalMarks; ?></th>
 						<th><?php echo final_grading_point($totalGrades, $totalSubjects); ?></th>
 					</tr>
 					</tbody>
 				</table>
+				<button onclick='printDiv("PrintClass10final	")' class="btn btn-info pull-right">Printo</button>
 			</div> <!-- panel -->
 		</div>
 		</div>

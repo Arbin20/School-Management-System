@@ -39,14 +39,14 @@
 		</div>
 		<div class="col-md-8">
 			<div class="panel panel-info">
-			<div class="panel-heading">Here is your class routine!</div>
+			<div class="panel-heading">Orari i juaj!</div>
 			<table class="table table-striped table-bordered" id="printTable">
 				<thead>
 					<tr>
-						<th>Subject</th>
-						<th>Teacher</th>
-						<th>Days</th>
-						<th>Time</th>
+						<th>Lënda</th>
+						<th>Arsimtari</th>
+						<th>Ditët</th>
+						<th>Koha</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -79,7 +79,7 @@
 			</table>
 			</div>
 			<div style="margin-top: 20px;"></div>
-			<button onclick='printDiv("printTable")' class="btn btn-info pull-right">Print</button>
+			<button onclick='printDiv("printTable")' class="btn btn-info pull-right">Printo</button>
 		</div>
 	</div>
 </div>

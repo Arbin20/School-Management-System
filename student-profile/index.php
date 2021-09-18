@@ -32,17 +32,17 @@
 		</div>
 		<div class="col-md-8">
 			<div class="panel panel-info">
-			<div class="panel-heading">Welcome!</div>
+			<div class="panel-heading">Mirë se vini!</div>
 			<table class="table table-striped">
 				<thead>
 					<tr>
-						<th>Attribute</th>
-						<th>Value</th>
+						<th>Atributet</th>
+						<th>Vlerat</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>Name</td>
+						<td>Emri</td>
 						<td><?php echo $student_name; ?></td>
 					</tr>
 					<tr>
@@ -50,51 +50,51 @@
 						<td><?php echo $student_email; ?></td>
 					</tr>
 					<tr>
-						<td>Class</td>
+						<td>Klasa</td>
 						<td><?php echo $student_class; ?></td>
 					</tr>
 					<tr>
-						<td>Section</td>
+						<td>Seksioni</td>
 						<td><?php echo $student_section; ?></td>
 					</tr>
 					<tr>
-						<td>Group</td>
+						<td>Grupi</td>
 						<td><?php echo $student_group; ?></td>
 					</tr>
 					<tr>
-						<td>Roll</td>
+						<td>Nr</td>
 						<td><?php echo $student_roll; ?></td>
 					</tr>
 					<tr>
-						<td>Father's Name</td>
+						<td>Emri i Babës</td>
 						<td><?php echo $student_father_name; ?></td>
 					</tr>
 					<tr>
-						<td>Mother's Name</td>
+						<td>Emri i Nënës</td>
 						<td><?php echo $student_mother_name; ?></td>
 					</tr>
 					<tr>
-						<td>Address</td>
+						<td>Adresa</td>
 						<td><?php echo $student_address; ?></td>
 					</tr>
 					<tr>
-						<td>Parent's Contact</td>
+						<td>Numri i Prindit</td>
 						<td><?php echo $student_contact; ?></td>
 					</tr>
 					<tr>
-						<td>Date of birth</td>
+						<td>Ditëlindja</td>
 						<td><?php echo $student_dob; ?></td>
 					</tr>
 					<tr>
-						<td>Blood Group</td>
+						<td>Grupi i Gjakut</td>
 						<td><?php echo $student_blood_group; ?></td>
 					</tr>
 					<tr>
-						<td>Gender</td>
+						<td>Gjinia</td>
 						<td><?php echo $student_gender; ?></td>
 					</tr>
 					<tr>
-						<td>Status</td>
+						<td>Statusi</td>
 						<td><?php echo $student_status; ?></td>
 					</tr>
 				</tbody>
