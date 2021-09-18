@@ -1,6 +1,6 @@
 <?php require_once "includes/header.php"; ?>
 <div class="panel panel-info">
-<div class="panel-heading"><h3>Edit Result</h3></div>
+<div class="panel-heading"><h3>Ndrysho Rezultatet</h3></div>
 <?php
 	$session_user = $_SESSION['username'];
 
