@@ -1,4 +1,5 @@
 <?php require_once "includes/header.php"; ?>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<h1>Arsimtarët <span class="pull-right"><a href="teachers.php?action=add_new" class="btn btn-info">Shto Arsimtar të ri</a></span></h1>
 	<?php 
 		if(isset($_GET['action'])) {
