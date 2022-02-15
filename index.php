@@ -37,7 +37,7 @@
 						$query = "SELECT * FROM page_contents WHERE page_name='teacher_page'";  
 						$result = mysqli_query($conn, $query);
 						$row = mysqli_fetch_assoc($result);
-						echo $row['page_text'];
+					
 						?>
 						<br />
 						<br />
