@@ -8,6 +8,7 @@
 		$exam_type = $_POST['exam_type'];
 		$subject_id = $_POST['select_subject'];
 
+		
 		$thisdate = date("Y");
 
 		$checkquery = "SELECT * FROM results WHERE global_name_id=$global_name_id AND exam_type='$exam_type' AND subject_id=$subject_id AND teacher_email='$session_user'";
