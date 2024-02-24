@@ -20,17 +20,11 @@
 		<div class="col-md-8">
 			<form action="" method="post">
 				<div class="form-group">
-					<label for="">Titulli</label>
-					<input type="text" name="subject" class="form-control">
+				<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-9e03d677-d1fe-46e7-bb20-cf926f482135" data-elfsight-app-lazy></div>
 				</div>
-				<div class="form-group">
-					<label for="">Mesazhi juaj</label>
-					<textarea name="message" id="" class="form-control" cols="30" rows="10" placeholder="Shënoni mesazhin apo 	problemin tuaj..."></textarea>
-				</div>
-				<div class="form-group">
-					<input type="submit" name="message_submit" class="btn btn-info pull-right" value="Dërgo">
-				</div>
-			</form>
+				
+			
 		</div>
 	</div>
 </div>
